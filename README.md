@@ -1,2 +1,2 @@
 # WebSocketsChatXamarin
-## Based On https://github.com/prashantvc
+## Based On https://github.com/prashantvc/easychat-service
