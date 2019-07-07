@@ -53,11 +53,12 @@ namespace MyChat
         {
 
 #if __IOS__
-            await client.ConnectAsync(new Uri("ws://localhost:5000"), cts.Token);
+            await client.ConnectAsync(new Uri("ws://10.0.2.2:5000"), cts.Token);
 #else
             await client.ConnectAsync(new Uri("ws://10.0.2.2:5000"), cts.Token);
 #endif
-
+            //ws://192.168.0.101:5000
+            //ws://10.0.2.2:5000
             UpdateClientState();
 
             await Task.Factory.StartNew(async () =>
